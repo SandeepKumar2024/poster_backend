@@ -7,7 +7,7 @@ services:
     startCommand: "npm start"
     envVars:
       - key: DATABASE
-        value: your_mongodb_connection_string
+        value: mongodb+srv://sandeep:sandeep@cluster0.scsvm.mongodb.net/VRV?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
-        value: your_jwt_secret
+        value: sandeep
     healthCheckPath: "/api/health"
