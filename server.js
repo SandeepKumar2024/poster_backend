@@ -11,9 +11,9 @@ const postRoutes = require("./routes/postRoutes");
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests from this origin
+    origin: true, // This allows requests from any origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
-    credentials: true, // Include credentials if needed
+    credentials: true, // Allow credentials like cookies or Authorization headers
   })
 );
 const PORT = process.env.PORT || 5000;
