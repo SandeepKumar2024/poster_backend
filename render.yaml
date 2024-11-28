@@ -7,7 +7,7 @@ services:
     startCommand: "npm start"
     envVars:
       - key: DATABASE
-        value:
+        value: your_mongodb_connection_string
       - key: JWT_SECRET
-        value:
+        value: your_jwt_secret
     healthCheckPath: "/api/health"
